@@ -12,7 +12,10 @@ body {
 	padding: 24px;
 }
 
-form[action="login-form"] {
+#hello{
+	display: none;
+}
+.container {
 	width: 100%;
 	max-width: 420px;
 	background: #ffffff;
@@ -30,7 +33,7 @@ label {
 	color: #0f1724;
 }
 
-input[type="email"], input[type="password"] {
+#username {
 	width: 100%;
 	padding: 10px 12px;
 	border: 1px solid #cbd5e1;
@@ -83,7 +86,11 @@ input:focus {
   transform: translateY(-50%) scale(1.2);
 }
 
-
+#Error{
+	display: none;
+	color: red;
+	font-size: small;
+}
 button[type="submit"] {
 	width: 100%;
 	padding: 10px 12px;

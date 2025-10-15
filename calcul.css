@@ -1,0 +1,68 @@
+/* Simple styles for calculatrice.html */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: Arial, Helvetica, sans-serif; }
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f7fb;
+  color: #03263a;
+  padding: 24px;
+}
+
+/* Basic container styling (optional wrapper with class .calc-panel) */
+.calc-panel {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.06);
+}
+
+/* Inputs side-by-side */
+#nb1, #nb2 {
+  width: calc(50% - 8px);
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border: 1px solid #d6e0ec;
+  border-radius: 8px;
+  background: #fbfdff;
+  font-size: 15px;
+}
+#nb2 { margin-left: 8px; }
+
+/* Buttons */
+.operation {
+  display: inline-block;
+  min-width: 64px;
+  padding: 10px 14px;
+  margin: 6px 6px 0 0;
+  border-radius: 8px;
+  border: 1px solid #d1dbe6;
+  background: #f0f6ff;
+  color: #04263b;
+  font-size: 16px;
+  cursor: pointer;
+}
+.operation:hover { background: #e6efff; }
+.operation:active { transform: translateY(1px); }
+.operation#comp { background: #ffecec; border-color:#ffd6d6; color:#7a1b1b; }
+
+/* Display */
+#Display {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d6e0ec;
+  background: #f8fbff;
+  font-size: 16px;
+  color: #041830;
+}
+
+@media (max-width: 420px) {
+  #nb1, #nb2 { width: 100%; margin-left: 0; }
+  .operation { min-width: 48%; }
+}

@@ -1,26 +1,31 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.querySelector("form");
-  const usernameInput = document.getElementById("Username");
-  const passwordInput = document.getElementById("Password");
-  const toggle = document.getElementById("togglePassword");
+  let form = document.querySelector("form");
+  let usernameInput = document.getElementById("username");
+  let passwordInput = document.getElementById("password");
+  let toggle = document.getElementById("togglePassword");
+  let btn = document.getElementById("submit");
+  let h2 = document.getElementById("welcome");
+  let h1 = document.getElementById("hello");
+  let errorMessage = document.getElementById("Error")
+  
+  let ctnr = document.getElementById("container")
 
-  // Validation du formulaire
-  form.addEventListener("submit", function(e) {
-    const username = usernameInput.value.trim();
-    const password = passwordInput.value.trim();
 
-    if (username === "" || password === "") {
-      e.preventDefault();
-      alert("⚠️ Please fill in both fields.");
-      return;
+  btn.addEventListener("click",()=>{
+    if (usernameInput.value == "Oussama1234" && passwordInput.value == "pass@1122" ) {
+      
+      ctnr.style.display= "none" ;
+      h1.style.display= "block" ;
+      h1.innerHTML = "Salam " + usernameInput.value ;
     }
-
-    alert("✅ Login successful (simulation)");
-  });
-
+    else{
+      errorMessage.style.display= "block";
+    }
+  } )
+  
+    
   // Bouton pour afficher / masquer le mot de passe
   toggle.addEventListener("click", function() {
     const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
     passwordInput.setAttribute("type", type);
   });
-});
+

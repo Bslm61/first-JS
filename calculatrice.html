@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calcul.css">
+</head>
+<body>
+    <input type="number" id="nb1" placeholder="0" >
+    <input type="number" id="nb2" placeholder="0" > <br>
+    <button value="+" type="button" class="operation "id="+">+</button> 
+    <button value="-" type="button" class="operation "id="-">-</button>
+    <button value="/" type="button" class="operation "id="/">/</button>
+    <button value="%" type="button" class="operation "id="%">%</button>
+    <button value="²" type="button" class="operation "id="²">²</button>
+    <button value="comp" type="button" class="operation "id="comp">C</button><br>
+    <p id="result">0</p>
+<script>
+const nb1 = document.getElementById("nb1").value;
+const nb2 = document.getElementById("nb2").value;
+const btn = document.querySelectorAll("operation");
+const result = document.getElementById("result");
+
+btn.addEventListener("click",()=>{
+
+    switch (btn.value) {
+        case "+": 
+       result = nb1 + nb2
+       console.log("kkkkkkkkkkkkkkkkkkkkk")
+       result.innerHTML = result
+        break;
+
+    default:
+        break;
+}
+})
+</script>
+</body>
+</html>

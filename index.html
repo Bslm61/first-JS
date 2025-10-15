@@ -11,20 +11,22 @@
 
 <body>
 
-<form action="login-form" method="post">
-  <h2>Welcome Back 👋</h2>
+  <h1 id ="hello"></h1>
+<div class="container" id="container">
+  <h2 id="welcome">Welcome Back 👋</h2>
 
   <div>
     <label for="Username">Username </label>
-    <input type="email" id="Username" name="Username" required> <br>
+    <input type="text" id="username" name="username" required> <br>
   </div>
   <div class="password-field">
     <label for="password">Password</label>
-    <input type="password" id="Password" name="password">
+    <input type="password" id="password" name="password">
+    <p id="Error">Username or Password incorrect</p>
     <button type="button" id="togglePassword" class="toggle-button">👁</button>
   </div>
   <div>
- <button type="submit" >Login</button>
+ <button id="submit" >Login</button>
  </div> 
 <div class="links">
   <p>Don't have an account?
