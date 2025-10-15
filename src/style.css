@@ -91,7 +91,7 @@ input:focus {
 	color: red;
 	font-size: small;
 }
-button[type="submit"] {
+#submit {
 	width: 100%;
 	padding: 10px 12px;
 	border-radius: 8px;
@@ -101,6 +101,7 @@ button[type="submit"] {
 	font-weight: 600;
 	font-size: 15px;
 	cursor: pointer;
+	margin-top: 10px;
 }
 
 

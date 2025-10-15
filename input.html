@@ -8,15 +8,16 @@
 <body>
 
 
-    <button id="Click"> Click </button>
-    <!-- <input type="password" id="password" placeholder="Entrer votre password" >  -->
-    <input type="text" id="Full name" placeholder="Entrer votre nom" > 
+    <button id="click"> Click </button>
+    <input type="password" id="password" placeholder="Entrer votre password" > 
+    <!-- <input type="text" id="Full name" placeholder="Entrer votre nom" >  -->
     <script>
-     const click =document.getElementById("Click");   
-    //  click.addEventListener("click",()=>{
-    //     (pass.type=="password"?pass.type="text":pass.type="password")
-    //     (pass.type=="password"?click.innerHTML="​🙉​🙉​​":click.innerHTML="​🙈​🙈​")
-    //  })
+     const click =document.getElementById("click");   
+     const pass =document.getElementById("password");   
+     click.addEventListener("click",()=>{
+        (pass.type=="password"?pass.type="text":pass.type="password")
+        (pass.type=="password"?click.innerHTML="​🙉​🙉​​":click.innerHTML="​🙈​🙈​")
+     })
     </script>
 </body>
 </html>
